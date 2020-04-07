@@ -1,0 +1,771 @@
+/*Specification*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h2, h4, h5 {
+	font-weight: 700;
+	color: #000;
+}
+
+h3 {
+	font-weight: 400;
+}
+
+h2 {
+	font-size:30px;
+}
+
+button {
+	background: none;
+}
+/*Header*/
+
+header {
+	padding-top: 48px;
+}
+
+.menu {
+	margin-top: 20px;
+}
+
+.menu__item {
+	margin-right: 38px;
+}
+
+
+.menu__item a {
+	font-size: 20px;	
+	color: #212121;
+	text-decoration: none;
+}
+
+.title {
+	text-align: center;
+}
+
+.title__main {
+	padding-top: 124px;
+}
+
+.title__text {
+	width: 625px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+/*Banner*/
+
+.top-banner {
+	background: url(../img/background-header.jpg) no-repeat center bottom / cover;
+	color: #ffffff;
+	background-attachment: fixed; 
+	margin-top: 10px;
+	text-align: center;
+ 	width: 100%;
+ 	height: 100%
+
+}
+
+.top-banner__title {
+	margin-top: 148px;
+	font-size: 60px;	
+}
+
+.top-banner__subtitle {
+	font-size: 22px;
+	margin-top: 26px;
+	margin-bottom: 108px;
+}
+
+
+.top-banner__btn {
+	width: 220px;
+	height: 70px;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+
+}
+
+
+.top-banner__btn_clear {
+	background: none;
+	border: 3px solid #F7F7F7;
+}
+
+.top-banner__btn_outline-none {
+	
+	background: #00887A;
+	border: none;
+}
+
+.control__item {
+	margin-top: 96px;
+	padding-bottom: 71px;
+}
+
+.control__item a {
+	font-size: 35px;	
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*Section About*/
+
+.features {
+	text-align: center;
+	padding-top: 122px;
+	padding-bottom: 130px;
+}
+
+.features__img {
+	padding-bottom: 40px;
+}
+
+.features__title {
+	padding-bottom: 18px;
+}
+
+/*Section services*/
+
+.services {
+	background: #E3FCF8;
+	padding-bottom: 90px;
+}
+
+.services__title {
+	padding-bottom: 110px ;
+}
+
+.benefits-wrap {
+	margin-bottom: 30px;
+	margin-right: 28px;
+}
+
+.benefits {
+	text-align: center;
+	background: #fff;
+} 
+
+.benefits-wrap:last-child {
+	margin-right: 0;
+}
+
+.benefits:hover{
+	background-color: #00887A;
+	color: #fff;
+	box-shadow: 0 8px 12px 1px rgba(0, 0, 0, .3);
+}
+
+.benefits__item {
+	margin-top:58px;
+	background-image: url(../img/services-item.png);
+	width: 50px;
+	height: 62px;
+	display: inline-block;
+}
+
+.benefits:hover .benefits__item {
+	background-image: url(../img/backgroung-servicesItem.png); 
+}
+
+.benefits__title {
+	padding-top: 38px;
+}
+
+.benefits__text {
+	padding-top: 28px;
+	padding-bottom: 46px;
+}
+
+.benefits__btn {
+	width: 146px;
+	height: 50px;
+	border: 2px solid #000;
+	font-size: 20px;
+	margin-bottom: 48px;
+}
+
+.benefits:hover .benefits__btn {
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+/*Section Portfolio*/
+
+.portfolio__toggles {
+	padding-top: 112px;
+	padding-bottom: 120px;
+}
+
+.toggles {
+	text-align: center;
+}
+
+.toggles button {
+	padding: 8px 22px;
+	margin-right: 20px;
+	font-size: 20px;
+	border: 2px solid #00887A;
+}
+
+.toggles button:hover {
+	border: none;
+	background: #00887A;
+	color: #fff;
+}
+
+.portfolio__item {
+	padding-bottom: 30px;
+	transition: all 1s ease;
+}
+
+.portfolio__item img {
+	width: 100%;
+}
+
+
+.portfolio__view-all {
+	text-align: center;
+	padding-top: 128px;
+}
+
+.view-all {
+	font-size: 20px;
+	padding: 8px 36px;
+	background: #00887A;
+	border: none;
+	color: #fff;
+	margin-bottom: 136px;
+}
+
+/*Section Pricing Plan*/
+
+.pricing-plan {
+	background: #EFF0F0;
+}
+
+.price-wrap {
+	margin: 126px 0 122px 0;
+}
+
+.price {
+	background: #fff;
+	text-align: center;
+}
+
+.price__inner {
+	width: 100%;
+	height: 209px;
+	text-align: center;
+	color: #fff; 
+	display: inline-block;
+	background: url(../img/background-PricingPlan.png) no-repeat center; 
+}
+
+.price__title {
+	font-size: 25px;
+	padding-top: 40px;
+}
+
+.price__subtitle {
+	font-size: 17px;
+}
+
+.price__subtitle sup {
+	font-size: 25px;
+}
+
+.price__subtitle_big {
+	font-size: 50px;
+}
+
+.price__text {
+	padding-top: 40px;
+	margin: 0 auto;
+	border-bottom: 1px solid #BEBEBE;
+	font-size: 17px;
+	width: 180px;
+}
+
+.price__btn {
+	margin-bottom: 62px;
+	margin-top: 66px;
+	width: 146px;
+	height: 50px;
+	border: 2px solid #000;
+	font-size: 20px;
+}
+
+.price:hover {
+	box-shadow: 0 6px 14px 2px rgba(0, 0, 0, .3)
+}
+
+.price:hover .price__btn {
+	background: #00887A;
+	color: #fff;
+	border: none;
+}
+
+/*Section Team*/
+
+.members-wrap {
+	margin-top: 128px;
+}
+
+.members {
+	text-align: center;
+}
+
+.members__img {
+	width: 100%;
+}
+
+.members__name {
+	padding-top: 38px;
+	font-size: 20px;
+}
+
+.members__position {
+	font-size: 15px;
+}
+
+.members__socials {
+	font-size: 30px;
+	justify-content: center;
+}
+
+.socials__item {
+	padding-right: 30px;
+}
+
+.socials__item:last-child {
+	padding-right: 0;
+}
+
+.socials__item a  {
+	color: #00887A;
+	background: #EFF0F0;
+	border-radius: 10px;
+}
+
+.socials__item i {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+.socials__item:hover a {
+	color: #fff;
+	background: #3A49A9;
+}
+
+.team__more {
+	padding-top: 78px;
+	text-align: center;
+	font-size: 90px;
+	padding-bottom: 78px;
+}
+
+.more__icon i {
+	color: #00887A;
+}
+
+.more__icon:hover i {
+	color: #3A49A9;
+}
+
+/*Section blog*/
+
+.blog {
+	background: #E3FCF8;
+}
+
+.blog__img_first {
+	margin-top: 130px;
+}
+
+.blog__preview_first {
+	margin-top: 190px;
+	margin-left: 30px;
+}
+
+.blog__preview_first h2 {
+	color: #00887A;
+}
+
+.blog__preview_second {
+	margin-top: 62px;
+}
+
+.blog__img_second {
+	margin-left: 30px;
+}
+
+.blog__preview_third {
+	margin-left: 30px;
+	margin-top: 62px;
+}
+
+.preview__title {
+	font-size: 25px;
+	font-weight: 600;
+	color: #000;
+	margin-bottom: 32px;
+}
+
+.subtitle__item {
+	margin-right: 40px;
+	margin-bottom: 36px;
+}
+
+.subtitle__item a {
+	text-decoration: none;
+	color: #000;
+}
+
+.subtitle__item i {
+	margin-right: 16px;
+}
+
+.blog__btn {
+	margin-top: 120px;
+	text-align: center;
+	margin-bottom: 120px;
+}
+
+
+.btn__item {
+	color: #fff;
+	background: #00887A;
+	border: none;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 14px 46px;
+}
+
+/*Section contact*/ 
+
+.contact {
+	background: url(../img/bg-contact.png) no-repeat center top / cover;
+}
+
+.contact__title {
+	color: #fff;
+}
+
+.title__main_white {
+	color: #fff;
+	padding-top: 124px;
+}
+
+.information-wrap {
+	margin-top: 102px;
+}
+
+.information__icon {
+	text-align: center;
+}
+
+.information__icon a  {
+	font-size: 75px;
+	color: #fff;
+	background: #3A49A9 ;
+	border-radius: 50px;
+}
+
+.information__icon i {
+	width: 108px;
+	height: 108px;
+	text-align: center;
+}
+
+.information__text {
+	color: #fff;
+	margin-top: 42px;
+	width: 246px;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+
+ input[type="text"], input[type="email"] {
+	width: 100%;
+	height: 82px;
+	border-radius: 5px;
+	padding-left: 20px;
+	margin: 84px 0 32px 0;
+}
+
+
+.request__area-text {
+	width: 100%;
+	height: 324px;
+	border-radius: 5px;
+	padding: 28px 0 0 20px;
+}
+
+.request__btn {
+	background: #fff;
+	font-weight: 700;
+	font-size: 20px;
+	border: none;
+	border-radius: 8px;
+	padding: 22px 83px;
+	margin: 38px 0 110px 0;
+}
+
+
+/*Section footer*/
+
+.footer__title {
+	font-weight: 700;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0;
+	padding: 10px 0 10px 0;	
+}
+
+/*Media*/ 
+
+@media screen and (max-width: 1200px) {
+
+.blog__img {
+	width: 100%;
+}
+
+.blog__preview {
+	width: 100%;
+}
+
+input[type="text"] {
+    margin: 84px 0 50px 0;
+}
+
+input[type="email"] {
+	margin: 0 0 50px 0;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+
+
+
+}
+
+@media screen and (max-width: 992px) {
+
+.top-banner__title {
+    margin-top: 120px;
+    font-size: 42px;
+}
+
+.top-banner__subtitle {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.features {
+    padding-bottom: 0;
+    padding-top: 80px;
+}
+
+.price-wrap {
+	margin-top: 126px;
+	margin-bottom: 0;
+}
+
+
+.ultimates {
+	margin: 70px 0 100px 0;
+}	
+	
+.blog__preview_first {
+    margin-top: 140px;
+    margin-left: 0;
+}
+
+.blog__preview_second {
+	margin-top: 15px;
+}
+
+.blog__img_second {
+	margin-left: 0;
+}
+
+.blog__preview_third {
+	margin-top: 15px;
+}
+
+.blog__img_third {
+	width: 100%;
+}
+
+.preview__title {
+    margin-bottom: 15px;
+}
+
+.preview__subtitle {
+	height: 40px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.menu__item {
+    	margin-right: 20px;
+	}
+
+/*Top-banner srction*/
+
+	.title__main {
+	    padding-top: 70px;
+	}
+
+	.title__text {
+	    width: 100%;
+	    padding-top: 15px;
+	}
+		
+
+	.top-banner__title {
+	    margin-top: 120px;
+	    font-size: 42px;
+	}
+
+	.top-banner__subtitle {
+	    font-size: 18px;
+	    margin-top: 20px;
+	    margin-bottom: 100px;
+	}
+
+	/*Section About*/
+
+	.features {
+	    padding-bottom: 0;
+	    padding-top: 80px;
+	}
+
+	/*Section Portfolio*/
+
+	.toggles__mockups {
+		margin-top: 20px;
+	}
+
+	/*Section Pricing Plan*/
+
+	.price-wrap {
+		margin-top: 126px;
+		margin-bottom: 0;
+	}
+
+	.price {
+		width: 330px;
+		margin: 0 auto;
+	}
+
+	.ultimates {
+		margin: 70px 0 100px 0;
+	}
+		
+	/*Blog Section*/
+
+	.blog__preview {
+		margin-left: 0;
+		margin-top: 30px;
+	}
+
+	.blog__preview_first {
+		margin-top: 60px;
+	}
+
+
+	.blog__img {
+	    margin-top: 20px;
+	}
+}	
+
+/*Contact section*/
+
+@media screen and (max-width: 575px) {
+
+	nav {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.menu {
+		margin-top: -90px;
+	}
+
+	.menu_item {
+		margin-right: 0;
+	}
+
+	.top-banner__title {
+	    margin-top: 65px;
+	    font-size: 34px;
+	}
+
+	.top-banner__subtitle {
+	    font-size: 14px;
+	    margin-bottom: 50px;
+}
+	
+	.top-banner__btn_clear {
+	    margin-bottom: 35px;
+}
+
+	.top-banner__btn {
+	    width: 40%;
+	    font-size: 18px;
+}
+		
+
+}
+
+@media screen and (max-width: 396px) {
+	.toggles__design {
+		margin-top: 20px;
+	}
+
+	.top-banner__btn {
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (max-width: 353px) {
+	.preview__subtitle {
+		font-size: 12px;
+	} 
+
+	.price {
+	width: 100%;
+	}
+}
+
+@media screen and (max-width: 323px) {
+	.toggles__all {
+		margin-bottom: 20px;
+	}
+
+}
+
