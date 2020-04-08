@@ -1,9 +1,13 @@
+const toggles = document.querySelector('.toggles');
+const portfolioItems = document.querySelectorAll('.portfolio__item');
+const menuBtn = document.querySelector('.menu-btn');
+const menuBlock = document.querySelector('.menu-block');
+const nav = document.querySelector('nav');
+
 const hide = item => item.style.opacity = 0;
 
 const show = item => item.style.opacity = 1;
 
-const toggles = document.querySelector('.toggles');
-const portfolioItems = document.querySelectorAll('.portfolio__item');
 
 const choiceCategory = event => {
 	const target = event.target;
@@ -34,5 +38,32 @@ const choiceCategory = event => {
 	};
 };
 
-toggles.addEventListener('click', choiceCategory)
+
+const showMenu = event => {
+	event.preventDefault();
+
+	!menuBlock.classList.contains('open-done') ?
+	show(nav) : 
+	hide(nav);
+
+	!menuBlock.classList.contains('open-done') ?
+	menuBlock.classList.add('open-done') : 
+	menuBlock.classList.remove('open-done');
+
+	if (menuBlock.classList.contains('open-done')) {
+		document.body.style.overflow = 'hidden';
+	} else {
+		document.body.style.overflow = 'visible';
+	}
+};
+
+// const showMenu = event => {
+// 	event.preventDefault();
+// 	!menuBlock.classList.contains('menu_active') ? menuBlock.classList.add('menu_active') : menuBlock.classList.remove('menu_active');
+// };
+
+
+// toggles.addEventListener('click', choiceCategory)
+menuBtn.addEventListener('click', showMenu);
+
 

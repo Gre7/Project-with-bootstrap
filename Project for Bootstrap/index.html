@@ -9,54 +9,61 @@
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<!--Наш файл стилей!-->
 	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" href="style/media.css">
+	<link rel="stylesheet" href="style/menu.css">			
 </head>
 <body>
 	<header id="header" class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-lg-2 col-xl-3">
+				<div class="col-md-12 col-lg-2 col-xl-3 d-flex justify-content-between">
 					<img src="img/beard-logo-small-55.png" alt="logo" class="logo">
+					<a class="menu-btn">
+						<i class="fa fa-bars"></i>
+					</a>
 				</div>
 				<div class="col-md-12 col-lg-9 col-xl-8 ml-auto">
-					<nav>
-						<ul class="menu d-flex flex-column flex-sm-row">
-							<li class="menu__item">
-								<a href="#">
-									Home
-							</a>
-						</li>
-							<li class="menu__item">
-								<a href="#">
-									About
-							</a>
-						</li>
-							<li class="menu__item">
-								<a href="#">
-									Servicing
-							</a>
-						</li>
-							<li class="menu__item">
-								<a href="#">
-									Portfolio
-							</a>
-						</li>
-							<li class="menu__item">
-								<a href="#">
-									Blog
-							</a>
-						</li>
-							<li class="menu__item">
-								<a href="#">
-									Contact
-							</a>
-						</li>
-							<li class="menu__item">
-								<a href="#" title="">
-								<i class="fa fa-search"></i>	
+					<div class="menu-block">
+						<nav>
+							<ul class="menu d-flex flex-column flex-sm-row">
+								<li class="menu__item">
+									<a href="#">
+										Home
 								</a>
-						</li>
-						</ul>
-					</nav>
+							</li>
+								<li class="menu__item">
+									<a href="#about">
+										About
+								</a>
+							</li>
+								<li class="menu__item">
+									<a href="#">
+										Servicing
+								</a>
+							</li>
+								<li class="menu__item">
+									<a href="#">
+										Portfolio
+								</a>
+							</li>
+								<li class="menu__item">
+									<a href="#">
+										Blog
+								</a>
+							</li>
+								<li class="menu__item">
+									<a href="#">
+										Contact
+								</a>
+							</li>
+								<li class="menu__item">
+									<a href="#" title="">
+									<i class="fa fa-search"></i>	
+									</a>
+							</li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</div>
