@@ -3,6 +3,7 @@ const portfolioItems = document.querySelectorAll('.portfolio__item');
 const menuBtn = document.querySelector('.menu-btn');
 const menuBlock = document.querySelector('.menu-block');
 const nav = document.querySelector('nav');
+const menu = document.querySelector('.menu');
 
 const hide = item => item.style.opacity = 0;
 
@@ -57,13 +58,19 @@ const showMenu = event => {
 	}
 };
 
-// const showMenu = event => {
-// 	event.preventDefault();
-// 	!menuBlock.classList.contains('menu_active') ? menuBlock.classList.add('menu_active') : menuBlock.classList.remove('menu_active');
-// };
+const navigation = event => {
+	const target = event.target;
+	if (target.className == "fa-search") return;
+
+	if (menuBlock.classList.contains('open-done')) { 
+		hide(nav);
+		menuBlock.classList.remove('open-done');
+		document.body.style.overflow = 'visible';
+	}
+};
 
 
-// toggles.addEventListener('click', choiceCategory)
+toggles.addEventListener('click', choiceCategory);
 menuBtn.addEventListener('click', showMenu);
-
+menu.addEventListener('click', navigation)
 
