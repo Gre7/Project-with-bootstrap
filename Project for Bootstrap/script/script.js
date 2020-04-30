@@ -4,6 +4,9 @@ const menuBtn = document.querySelector('.menu-btn');
 const menuBlock = document.querySelector('.menu-block');
 const nav = document.querySelector('nav');
 const menu = document.querySelector('.menu');
+const services = document.getElementById('services');
+const benefits = document.querySelectorAll('.benefits');
+// const benefitsAll = 
 
 const hide = item => item.style.opacity = 0;
 
@@ -69,7 +72,105 @@ const navigation = event => {
 	}
 };
 
+const hideText = (item) => item.classList.remove('show');
 
+const showText = (item) => item.classList.add('show');
+
+const readMore = event => {
+	const target = event.target;
+
+	if (target.tagName != "BUTTON") return;
+
+	for (let elem of benefits) {
+		if (target.dataset.target == "first" && elem.id == target.dataset.target) {
+			let currentText = elem.querySelector('.more');
+			if (!currentText.classList.contains('show')) {
+				showText(currentText);
+				target.textContent = 'HIDE'
+			} else {
+				hideText(currentText);
+				target.textContent = 'READ MORE'
+			}
+			
+		} 
+	}
+
+	for (let elem of benefits) {
+		if (target.dataset.target == "second" && elem.id == target.dataset.target) {
+			let currentText = elem.querySelector('.more');
+			if (!currentText.classList.contains('show')) {
+				showText(currentText);
+				target.textContent = 'HIDE'
+			} else {
+				hideText(currentText);
+				target.textContent = 'READ MORE'
+			}
+			
+		} 
+	}
+
+	for (let elem of benefits) {
+		if (target.dataset.target == "third" && elem.id == target.dataset.target) {
+			let currentText = elem.querySelector('.more');
+			if (!currentText.classList.contains('show')) {
+				showText(currentText);
+				target.textContent = 'HIDE'
+			} else {
+				hideText(currentText);
+				target.textContent = 'READ MORE'
+			}
+			
+		} 
+	}
+
+	for (let elem of benefits) {
+		if (target.dataset.target == "fourth" && elem.id == target.dataset.target) {
+			let currentText = elem.querySelector('.more');
+			if (!currentText.classList.contains('show')) {
+				showText(currentText);
+				target.textContent = 'HIDE'
+			} else {
+				hideText(currentText);
+				target.textContent = 'READ MORE'
+			}
+			
+		} 
+	}
+
+	for (let elem of benefits) {
+		if (target.dataset.target == "fifth" && elem.id == target.dataset.target) {
+			let currentText = elem.querySelector('.more');
+			if (!currentText.classList.contains('show')) {
+				showText(currentText);
+				target.textContent = 'HIDE'
+			} else {
+				hideText(currentText);
+				target.textContent = 'READ MORE'
+			}
+			
+		} 
+	}
+
+	for (let elem of benefits) {
+		if (target.dataset.target == "sixth" && elem.id == target.dataset.target) {
+			let currentText = elem.querySelector('.more');
+			if (!currentText.classList.contains('show')) {
+				showText(currentText);
+				target.textContent = 'HIDE'
+			} else {
+				hideText(currentText);
+				target.textContent = 'READ MORE'
+			}
+			
+		} 
+	}
+
+	
+
+};
+
+
+services.addEventListener('click', readMore);
 toggles.addEventListener('click', choiceCategory);
 menuBtn.addEventListener('click', showMenu);
 menu.addEventListener('click', navigation)

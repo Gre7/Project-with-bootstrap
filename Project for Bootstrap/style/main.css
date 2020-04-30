@@ -207,6 +207,14 @@ header {
 	border: 2px solid #fff;
 }
 
+.more {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
 /*Section Portfolio*/
 
 .portfolio__toggles {
