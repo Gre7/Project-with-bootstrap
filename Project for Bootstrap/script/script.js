@@ -6,7 +6,9 @@ const nav = document.querySelector('nav');
 const menu = document.querySelector('.menu');
 const services = document.getElementById('services');
 const benefits = document.querySelectorAll('.benefits');
-// const benefitsAll = 
+const moreView = document.getElementById('more-view');
+const moreViewBlocks = document.querySelectorAll('.more-view-block');
+
 
 const hide = item => item.style.opacity = 0;
 
@@ -169,7 +171,23 @@ const readMore = event => {
 
 };
 
+const toggleDisplay = elem => {
+	if (elem.style.display === 'flex') {
+		elem.style.display = 'none'
+		moreView.textContent = 'MORE VIEW'
+	} else {
+		elem.style.display = 'flex'; 
+		moreView.textContent = 'HIDE MORE'
+	} 
+}
 
+const viewMore = () => {
+	for (let row of moreViewBlocks) {
+		toggleDisplay(row);
+	}
+};
+
+moreView.addEventListener('click', viewMore);
 services.addEventListener('click', readMore);
 toggles.addEventListener('click', choiceCategory);
 menuBtn.addEventListener('click', showMenu);
