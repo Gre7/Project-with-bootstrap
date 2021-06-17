@@ -169,7 +169,7 @@ header {
 }
 
 .benefits:hover{
-	background-color: #00887A;
+	background-color: #81D1F1; /*#00887A;*/
 	color: #fff;
 	box-shadow: 0 8px 12px 1px rgba(0, 0, 0, .3);
 }
@@ -183,7 +183,7 @@ header {
 }
 
 .benefits:hover .benefits__item {
-	background-image: url(../img/backgroung-servicesItem.png); 
+	//background-image: url(../img/backgroung-servicesItem.png); 
 }
 
 .benefits__title {
@@ -334,6 +334,10 @@ header {
 }
 
 /*Section Team*/
+
+.team {
+	padding-bottom: 100px;
+}
 
 .members-wrap {
 	margin-top: 128px;
